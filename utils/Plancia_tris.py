@@ -47,24 +47,39 @@ class plancia():
         # Vince O -----> -1
         # Pareggio ---->  0
         # In corso ---->  2
-        
+
         for i in range(3):
-            if self.get_plancia[i][0] == 'X' and self.get_plancia[i][0] == self.get_plancia[i][1] and self.get_plancia[i][0] == self.get_plancia[i][2]:
+            a = self.get_plancia[i][0]
+            b = self.get_plancia[i][1]
+            c = self.get_plancia[i][2]
+
+            if a == 'X' and a == b and a == c:
                 return 1
-            elif self.get_plancia[i][0] == 'O' and self.get_plancia[i][0] == self.get_plancia[i][1] and self.get_plancia[i][0] == self.get_plancia[i][2]:
+            elif a == 'O' and a == b and a == c:
                 return -1
         for i in range(3):
-            if self.get_plancia[0][i] == 'X' and self.get_plancia[0][i] == self.get_plancia[1][i] and self.get_plancia[0][i] == self.get_plancia[2][i]:
+            a = self.get_plancia[0][i]
+            b = self.get_plancia[1][i]
+            c = self.get_plancia[2][i]
+
+            if a == 'X' and a == b and a == c:
                 return 1
-            elif self.get_plancia[0][i] == 'O' and self.get_plancia[0][i] == self.get_plancia[1][i] and self.get_plancia[0][i] == self.get_plancia[2][i]:
+            elif a == 'O' and a == b and a == c:
                 return -1
-        if self.get_plancia[0][0] == 'X' and self.get_plancia[0][0] == self.get_plancia[1][1] and self.get_plancia[0][0] == self.get_plancia[2][2]:
+
+        a = self.get_plancia[0][0]
+        b = self.get_plancia[1][1]
+        c = self.get_plancia[2][2]
+        d = self.get_plancia[0][2]
+        e = self.get_plancia[2][0]
+
+        if a == 'X' and a == b and a == c:
             return 1
-        elif self.get_plancia[0][0] == 'O' and self.get_plancia[0][0] == self.get_plancia[1][1] and self.get_plancia[0][0] == self.get_plancia[2][2]:
+        elif a == 'O' and a == b and a == c:
             return -1
-        elif self.get_plancia[0][2] == 'X' and self.get_plancia[0][2] == self.get_plancia[1][1] and self.get_plancia[0][2] == self.get_plancia[2][0]:
+        elif d == 'X' and d == b and d == e:
             return 1
-        elif self.get_plancia[0][2] == 'O' and self.get_plancia[0][2] == self.get_plancia[1][1] and self.get_plancia[0][2] == self.get_plancia[2][0]:
+        elif d == 'O' and d == b and d == e:
             return -1
         else:
             pareggio = True
