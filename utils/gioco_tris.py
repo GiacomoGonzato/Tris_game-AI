@@ -22,12 +22,12 @@ class game_tris():
     def play(self):
         computer = 'entra nel loop'
         while computer not in {'y', 'n'}:
-            computer = input('Vuoi giocare contro il computer? [Y/N]').lower()
+            computer = input('Vuoi giocare contro il computer? [Y/N] ').lower()
 
         if computer == 'y':
             segno = 'entra nel loop'
             while segno not in {'x', 'o', '0'}:
-                segno = input('Con che segno vuoi giocare? ').lower()
+                segno = input('Con che segno vuoi giocare? (X inizia per prima) [X/O] ').lower()
 
         tavolo = plancia(self.lato)
         tavolo.stampa_plancia()

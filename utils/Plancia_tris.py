@@ -2,7 +2,6 @@ class plancia():
     def __init__(self, lato=6):
         self.lato = lato*2
         self.get_plancia = [['' for i in range(3)] for j in range(3)]
-        #self.get_plancia = [['', 'O', 'X'], ['O', 'O', ''], ['X', '', 'X']]
 
     def stampa_plancia(self):
         def quadrato(simbolo=''):

@@ -7,6 +7,6 @@ if __name__ == "__main__":
         if giocare == 'y':
             gioco = game_tris(5)
             gioco.play()
-            giocare = input("La faccimo un'altra partita? [Y/N]").lower()
+            giocare = input("La faccimo un'altra partita? [Y/N] ").lower()
         else:
             sys.exit()
