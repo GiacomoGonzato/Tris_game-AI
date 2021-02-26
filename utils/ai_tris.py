@@ -1,4 +1,4 @@
-from utils.Plancia_tris import plancia
+from utils.plancia_tris import plancia
 from math import *
 
 
