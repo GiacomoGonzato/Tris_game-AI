@@ -72,7 +72,7 @@ class game_tris():
             contatore += 1
             tavolo.stampa_plancia()
 
-            if contatore > 4:
+            if contatore >= 4:
                 check = tavolo.check_vittoria()
 
         if check == 0:
