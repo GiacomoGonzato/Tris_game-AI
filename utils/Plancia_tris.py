@@ -47,6 +47,7 @@ class plancia():
         # Vince O -----> -1
         # Pareggio ---->  0
         # In corso ---->  2
+        
         for i in range(3):
             if self.get_plancia[i][0] == 'X' and self.get_plancia[i][0] == self.get_plancia[i][1] and self.get_plancia[i][0] == self.get_plancia[i][2]:
                 return 1
