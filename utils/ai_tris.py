@@ -65,7 +65,7 @@ def scegli_mossa_ai(board, contatore):
             move_power = valore_mossa(banco_prova, contatore + 1)
             if valore < move_power:
                 mossa_futura = mossa
-            valore = move_power
+                valore = move_power
         return mossa_futura
     else:
         valore = inf
@@ -77,5 +77,5 @@ def scegli_mossa_ai(board, contatore):
             move_power = valore_mossa(banco_prova, contatore + 1)
             if valore > move_power:
                 mossa_futura = mossa
-            valore = move_power
+                valore = move_power
         return mossa_futura
