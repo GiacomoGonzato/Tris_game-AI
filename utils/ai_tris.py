@@ -1,4 +1,5 @@
 from utils.plancia_tris import plancia
+from random import *
 from math import *
 
 
@@ -8,6 +9,7 @@ def check_mosse_possibili(board):
         for j in range(3):
             if board.get_plancia[i][j] == '':
                 posti_vuoti.append((i+1, j+1))
+    shuffle(posti_vuoti)
     return posti_vuoti
 
 
